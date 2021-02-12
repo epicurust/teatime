@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Welcome to TeaTime at 7 Fixby Avenue!</h1>
+    <button onclick="whoIsMakingTea()" type="button" name="button">Click here to see who is making the Cuppa.</button>
+<br>
+    <iframe src="https://giphy.com/embed/WNllkQv9cJbYpJ9qir" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/animation-tea-cup-WNllkQv9cJbYpJ9qir">via GIPHY</a></p>
+<script type="text/javascript">
+  function whoIsMakingTea(names) {
+
+    var names = ["Michael", "Robyn", "James"];
+    var numberOfPeople = names.length;
+    var randomPersonPosition = Math.floor(Math.random() * numberOfPeople);
+    var randomPerson = names[randomPersonPosition];
+
+    return randomPerson + " is going to make cups of Tea!";
+    output = whoIsMakingTea();
+    alert(output);
+}
+
+output = whoIsMakingTea();
+alert(output);
+</script>
+  </body>
+</html>
